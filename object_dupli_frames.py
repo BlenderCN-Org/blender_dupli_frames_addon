@@ -18,7 +18,6 @@ class DupliFramesOp(bpy.types.Operator):
 
     start = bpy.props.IntProperty(name='Frame Start', default=0)
     end = bpy.props.IntProperty(name='Frame End', default=100)
-    on = bpy.props.IntProperty(name='On', default=1, min=1)
     off = bpy.props.IntProperty(name='Off', default=1, min=1)
     merge_objects = bpy.props.BoolProperty(name='Merge Objects', default=False)
     apply_modifiers = bpy.props.BoolProperty(name='Apply Modifiers', default=False)
@@ -28,7 +27,6 @@ class DupliFramesOp(bpy.types.Operator):
 
         layout.prop(self, 'start')
         layout.prop(self, 'end')
-        layout.prop(self, 'on')
         layout.prop(self, 'off')
         layout.prop(self, 'apply_modifiers')
         row = layout.row()
