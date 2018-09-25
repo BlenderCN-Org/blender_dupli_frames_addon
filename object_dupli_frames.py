@@ -93,4 +93,4 @@ def register():
 
 def unregister():
     bpy.types.VIEW3D_PT_tools_object.remove(draw_function)
-    bpy.utils.register_class(DupliFramesOp)
+    bpy.utils.unregister_class(DupliFramesOp)
